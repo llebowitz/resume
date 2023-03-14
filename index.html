@@ -31,13 +31,18 @@
     </body>
 
     <main>
-        <h2 id="technical-skills" @click:="toggle">&nbsp Technical Skills</h2>
-            <div class="paragraph" id="technical-skills-p" v-show="show">
+        <div class="section" onclick="toggleText">
+            <button class="accordian">
+                <h2 id="technical-skills">&nbsp Technical Skills</h2></button>
+        </div>
+            <div class="paragraph" id="technical-skills-p">
                 <p><em>Spring Boot, Java, PostgreSQL, HTML, CSS, JavaScript, Vue.js, Responsive Design, IntelliJ, Git, Unit Testing (JUnit), E/R diagrams, Integration Testing, Unix</em></p>
             </div>
-
-        <h2 id="education">&nbsp Education</h2>
-            <div class="paragraph" id="education-p" v-show="true">
+        
+        <div class="section">
+            <h2 id="education">&nbsp Education</h2>
+        </div>
+            <div class="paragraph" id="education-p">
                 <div class="justify-right">
                     <div>
                         <p><strong>Tech Elevator</strong></p>
@@ -61,7 +66,9 @@
                 </div>
             </div>
 
-        <h2 id="technical-experience">&nbsp Technical Experience</h2>
+        <div class="section">
+            <h2 id="technical-experience">&nbsp Technical Experience</h2>
+        </div>
             <div class="paragraph" id="technical-experience-p">
                 <p><strong>Vending Machine Application</strong></p>
                 <p>Created a command line vending machine program that utilized Object-Oriented Programming Principles, Java, and file I/O. The software was able to accept user input, track inventory, add up money amounts and provide change, and update a log file.</p>
@@ -76,7 +83,9 @@
                 <p>Participated in a 36-hour hackathon to develop technology solutions for civic-minded organizations. Project managed and supported a team updating the Deed-o-matic, a tool to automate filling out paperwork for deed transfers. Updates included adding capability to scan PDF documents and parse relevant information into appropriate forms.</p>
             </div>
 
-        <h2 id="professional-experience">&nbsp Professional Experience</h2>
+        <div class="section">
+            <h2 id="professional-experience">&nbsp Professional Experience</h2>
+        </div>
             <div class="paragraph" id="professional-experience-p">
                 <div class="justify-right">
                     <div>
@@ -140,24 +149,19 @@
 
 </html>
 
-
 <script>
 
-    export default {
-        components: {},
+   const section = getElementbyClass("section");
+   const paragraph = getElementbyClass("paragraph")
 
-        data() {
-            return {
-                show: false,
-            };
-
-        },
-
-        methods: {
-            toggle() {
-                this.show == !this.show;
-            },
+   function toggleText() {
+        if (paragraph.style.display === "none") {
+            paragraph.style.display = "block";
+        } else {
+            paragraph.style.display = "none";
         }
-    }
+   }
+
+   section.addEventListener("click", toggleText)
 
 </script>

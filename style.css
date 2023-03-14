@@ -28,6 +28,7 @@ h2 {
 
 .paragraph {
     padding: 5px;
+    display: none;
 }
 
 img {
@@ -67,5 +68,3 @@ img {
     background-color: #dbcdf056;
 }
 
-#top-page {
-}
