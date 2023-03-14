@@ -19,6 +19,12 @@ h1 {
     color: #000000;
 }
 
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0px auto;
+}
+
 h2 {
     color: #000000 ;
     background-color: #c6e2e9 ;
@@ -68,3 +74,22 @@ img {
     background-color: #dbcdf056;
 }
 
+button.accordian {
+    border: none;
+    width: 100%;
+    background-color: #c6e2e9;
+    outline: none;
+    font-size: 26px;
+    font: bold;
+    padding: 5px;
+    text-align: left;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+button.accordian ::before {
+    font-family: FontAwesome; 
+    content: '\f078';
+    font-size: 18px;
+    float: right;
+}
