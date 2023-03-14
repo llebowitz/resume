@@ -1,0 +1,71 @@
+
+main {
+    padding-left: 5px;
+}
+
+.contact-info {
+    text-align: center;
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+}
+
+.contact {
+    margin: 0px 5px 0px 5px;
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+}
+
+h2 {
+    color: #000000 ;
+    background-color: #c6e2e9 ;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.paragraph {
+    padding: 5px;
+}
+
+img {
+    max-width: 40px;
+}
+
+.justify-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+#technical-skills-p {
+    background-color: #c6e2e94f;
+}
+
+#education {
+    background-color: #fad2e1;
+}
+
+#education-p {
+    background-color: #fad2e14b;
+}
+
+#technical-experience {
+    background-color: #d0f4de;
+}
+
+#technical-experience-p {
+    background-color: #d0f4de5f;
+}
+
+#professional-experience {
+    background-color: #dbcdf0;
+}
+
+#professional-experience-p {
+    background-color: #dbcdf056;
+}
+
+#top-page {
+}
