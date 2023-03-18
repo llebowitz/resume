@@ -34,7 +34,7 @@ h2 {
 
 .paragraph {
     padding: 5px;
-    display: none;
+    display: block;
 }
 
 img {
